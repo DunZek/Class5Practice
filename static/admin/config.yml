@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway # Backend protocol
+  branch: master # Branch to update and publish (optional; defaults to master)
+
+publish_mode: editorial_workflow
+media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "uploads"
+
+collections: 
+- name: "question" # Used in routes, e.g., /admin/collections/question
+  label: "Question" # Used in the UI
+  folder: "question" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  fields: # The fields for each document, usually in front matter
+    - {label: "Layout", name: "layout", widget: "hidden", default: "question"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Related Image", name: "relatedImage", widget: "image"}
+    - {label: "Body", name: "body", widget: "markdown"}

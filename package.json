@@ -1,0 +1,19 @@
+{
+  "name": "class-5-practice",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "netlify-cms-app": "^2.14.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/runtime-corejs2": "^7.12.5",
+    "sass": "^1.32.5"
+  }
+}
