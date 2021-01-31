@@ -7,15 +7,22 @@ media_folder: "static/uploads" # Media files will be stored in the repo under im
 public_folder: "uploads"
 
 collections:  
-- name: "question" # Used in routes, e.g., /admin/collections/question
+- name: "allQuestions" # Used in routes, e.g., /admin/collections/question
   label: "Question" # Used in the UI
-  folder: "question" # The path to the folder where the documents are stored
+  folder: "static/collections/allQuestions" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Question", name: "question", widget: "markdown"}
-    - {label: "Category", name: "relation", widget: "relation"}
+    - {
+      label: "Category", 
+      name: "relation", 
+      widget: "relation",
+      collection: "From all questions",
+      value_field: "allQuestions",
+      search_fields: ["Introduction", "Licensing Information", "Traffic Control", "The Basics of Driving", "Intersections and Turns", "Highways and Freeways", "Emergency Situations and Challenging Conditions", "Responsible Driving", "Sharing the Road", "Driving Within the Law", "Towing a Trailer"],
+      }
     - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
     - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
