@@ -19,7 +19,7 @@ collections:
       label: "Category", 
       name: "relation", 
       widget: "relation",
-      collection: "From all questions",
+      collection: "allQuestions",
       value_field: "allQuestions",
       search_fields: ["Introduction", "Licensing Information", "Traffic Control", "The Basics of Driving", "Intersections and Turns", "Highways and Freeways", "Emergency Situations and Challenging Conditions", "Responsible Driving", "Sharing the Road", "Driving Within the Law", "Towing a Trailer"],
       }
