@@ -8,7 +8,7 @@ public_folder: "uploads"
 
 collections:  
 - name: "licensingInformation" # Used in routes, e.g., /admin/collections/question
-  label: "\"Licensing Information\" Question" # Used in the UI
+  label: "\"Licensing Information\" Questions" # Used in the UI
   folder: "static/collections/licensingInformation" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -22,7 +22,7 @@ collections:
     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
 - name: "trafficControl"
-  label: "\"Traffic Control\" Question"
+  label: "\"Traffic Control\" Questions"
   folder: "static/collections/trafficControl"
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -36,7 +36,7 @@ collections:
     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
 - name: "theBasicsOfDriving"
-  label: "\"The Basics of Driving\" Question"
+  label: "\"The Basics of Driving\" Questions"
   folder: "static/collections/theBasicsOfDriving"
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -50,8 +50,92 @@ collections:
     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
 - name: "intersectionsAndTurns"
-  label: "\"Intersections and Turns\" Question"
+  label: "\"Intersections and Turns\" Questions"
   folder: "static/collections/intersectionsAndTurns"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - {label: "Topic", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Question", name: "question", widget: "markdown"}
+    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+- name: "highwaysAndFreeways"
+  label: "\"Highways And Freeways\" Questions"
+  folder: "static/collections/highwaysAndFreeways"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - {label: "Topic", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Question", name: "question", widget: "markdown"}
+    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+- name: "emergencySituationsAndChallengingConditions"
+  label: "\"Emergency Situations and Challenging Conditions\" Questions"
+  folder: "static/collections/emergencySituationsAndChallengingConditions"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - {label: "Topic", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Question", name: "question", widget: "markdown"}
+    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+- name: "responsibleDriving"
+  label: "\"Responsible Driving\" Questions"
+  folder: "static/collections/responsibleDriving"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - {label: "Topic", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Question", name: "question", widget: "markdown"}
+    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+- name: "sharingTheRoad"
+  label: "\"Sharing the Road\" Questions"
+  folder: "static/collections/sharingTheRoad"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - {label: "Topic", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Question", name: "question", widget: "markdown"}
+    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+- name: "drivingWithinTheLaw"
+  label: "\"Driving Within the Law\" Questions"
+  folder: "static/collections/drivingWithinTheLaw"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - {label: "Topic", name: "title", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Question", name: "question", widget: "markdown"}
+    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+- name: "towingATrailer"
+  label: "\"Towing a Trailer\" Questions"
+  folder: "static/collections/towingATrailer"
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   fields:
