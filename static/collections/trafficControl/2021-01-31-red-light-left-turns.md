@@ -6,5 +6,5 @@ relatedImage: uploads/default.jpeg
 correctAnswer: When safely turning from a one-way street onto another.
 incorrectAnswer1: When a sign prohibits it.
 incorrectAnswer2: When turning from a one-way street onto a two-way street.
-incorrectAnswer3: When you're driving underwater safely, and
+incorrectAnswer3: When you're driving safely underwater.
 ---
