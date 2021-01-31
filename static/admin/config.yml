@@ -28,4 +28,24 @@ collections:
     - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
-
+- name: "introduction"
+  label: "\"Introduction\" Question"
+  folder: "static/collections/introduction"
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  fields:
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Question", name: "question", widget: "markdown"}
+    - {
+      label: "Category", 
+      name: "relation", 
+      widget: "relation",
+      collection: "introduction",
+      value_field: "introduction",
+      search_fields: ["Introduction", "Licensing Information", "Traffic Control", "The Basics of Driving", "Intersections and Turns", "Highways and Freeways", "Emergency Situations and Challenging Conditions", "Responsible Driving", "Sharing the Road", "Driving Within the Law", "Towing a Trailer"],
+      }
+    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
