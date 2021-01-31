@@ -23,5 +23,5 @@ collections:
       max: 4, 
       min: 4, 
       allow_add: true, 
-      field: {label: "Answer", name: "body", widget: "markdown"}
+      field: {label: Answer, name: body, widget: markdown}
       }
