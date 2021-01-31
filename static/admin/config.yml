@@ -13,7 +13,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
-    - {label: "Topic", "title", widget: "string"}
+    - {label: "Topic", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Question", name: "question", widget: "markdown"}
     - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
@@ -27,7 +27,7 @@ collections:
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   fields:
-    - {label: "Topic", "title", widget: "string"}
+    - {label: "Topic", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Question", name: "question", widget: "markdown"}
     - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
@@ -41,7 +41,7 @@ collections:
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   fields:
-    - {label: "Topic", "title", widget: "string"}
+    - {label: "Topic", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Question", name: "question", widget: "markdown"}
     - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
@@ -55,7 +55,7 @@ collections:
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   fields:
-    - {label: "Topic", "title", widget: "string"}
+    - {label: "Topic", name: "title", widget: "string"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Question", name: "question", widget: "markdown"}
     - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
