@@ -13,8 +13,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
   fields: # The fields for each document, usually in front matter
-    - {label: "Layout", name: "layout", widget: "hidden", default: "question"}
-    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Body", name: "Question", widget: "markdown"}
     - {label: "Publish Date", name: "date", widget: "datetime"}
     - {label: "Related Image", name: "relatedImage", widget: "image"}
-    - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Possible answers", name: "list", widget: "list", max: 4, min: 4}
