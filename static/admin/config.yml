@@ -2,7 +2,7 @@ backend:
   name: git-gateway # Backend protocol
   branch: main # Branch to update and publish (optional; defaults to master)
 
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "uploads"
 
@@ -21,20 +21,20 @@ collections:
     - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
-- name: "introduction"
-  label: "\"Introduction\" question"
-  folder: "introduction"
-  create: true
-  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-  fields:
-    - {label: "Publish Date", name: "date", widget: "datetime"}
-    - {label: "Question", name: "question", widget: "markdown"}
-    - {label: "Category", name: "relation", widget: "relation"}
-    - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
-    - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
-    - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
-    - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
-    - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+# - name: "introduction"
+#   label: "\"Introduction\" question"
+#   folder: "introduction"
+#   create: true
+#   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+#   fields:
+#     - {label: "Publish Date", name: "date", widget: "datetime"}
+#     - {label: "Question", name: "question", widget: "markdown"}
+#     - {label: "Category", name: "relation", widget: "relation"}
+#     - {label: "Related Image", name: "relatedImage", widget: "image", default: "uploads/default.jpeg"}
+#     - {label: "Correct answer", name: "correctAnswer", widget: "markdown", minimal: true}
+#     - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
+#     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
+#     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
 # - name: "licensingInformation"
 #   label: "\"Licensing Information\" question"
 #   folder: "static/collections/licensingInformation"
