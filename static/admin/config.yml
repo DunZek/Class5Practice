@@ -2,12 +2,12 @@ backend:
   name: git-gateway # Backend protocol
   branch: main # Branch to update and publish (optional; defaults to master)
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: "static/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "uploads"
 
 collections:  
-- name: "allQuestions" # Used in routes, e.g., /admin/collections/question
+- name: "static/collections/allQuestions" # Used in routes, e.g., /admin/collections/question
   label: "question" # Used in the UI
   folder: "static/collections/allQuestions" # The path to the folder where the documents are stored
   create: true # Allow users to create new documents in this collection
