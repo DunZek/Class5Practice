@@ -21,6 +21,8 @@ collections:
     - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+
+collections:  
 - name: "introduction"
   label: "\"Introduction\" question"
   folder: "static/collections/introduction"
@@ -35,6 +37,8 @@ collections:
     - {label: "incorrect answer", name: "incorrectAnswer1", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer2", widget: "markdown", minimal: true}
     - {label: "incorrect answer", name: "incorrectAnswer3", widget: "markdown", minimal: true}
+
+collections:  
 - name: "licensingInformation"
   label: "\"Licensing Information\" question"
   folder: "static/collections/licensingInformation"
