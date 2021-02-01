@@ -7,13 +7,21 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
-    "netlify-cms-app": "^2.14.14"
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "netlify-cms": "^2.10.84",
+    "netlify-cms-app": "^2.14.14",
+    "vuetify": "^2.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/runtime-corejs2": "^7.12.5",
-    "sass": "^1.32.5"
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "webpack-node-externals": "^2.5.2"
   }
 }
